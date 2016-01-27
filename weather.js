@@ -5,7 +5,7 @@ $(function() {
     // Put your code here to change the "markup" variable.
     // Don't change any other code in this file. You will be sad.
 
-    var markup = "<h1>Today's Weather </h1>" +
+    var markup = "<h1>Today's weather </h1>" +
     "<ul> <li> Temparature: " + data.currently.apparentTemperature + " degrees </li>" +
     "<li> Chance of rain: " + data.currently.precipProbability + "% </li>" +
     "<li> Humidity: " + data.currently.humidity + "% </li> </ul>" +
@@ -15,7 +15,6 @@ $(function() {
     "<li> Next day: " + data.daily.data[1].apparentTemperatureMin + " degrees min. to " + data.daily.data[1].apparentTemperatureMax + " degrees max </li>" +
     "<li> Day after next: " + data.daily.data[2].apparentTemperatureMin + " degrees min. to " + data.daily.data[2].apparentTemperatureMax + " degrees max </li> </ul>"
       ;
-
     // End of your code
 
     $('.weather-report').html(markup);
